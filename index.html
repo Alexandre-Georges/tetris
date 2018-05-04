@@ -1,0 +1,38 @@
+<html id="html">
+  <head>
+    <style>
+      body {
+        display: flex;
+        width: 360px;
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      #score, #level {
+        font-weight: bold;
+      }
+      #start {
+        padding: 0.5rem 1rem;
+        background-color: pink;
+        position: absolute;
+      }
+      #next-piece {
+        position: absolute;
+        margin-left: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="score"></span>
+    <span id="level"></span>
+    <canvas id="canvas" width="360" height="600" autofocus></canvas>
+    <canvas id="next-piece" width="0" height="0"></canvas>
+    <button id="start">Start</button>
+    <script src="node_modules/mainloop.js/build/mainloop.min.js"></script>
+    <script src="utils.js"></script>
+    <script src="piece.js"></script>
+    <script src="pieceHandling.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
